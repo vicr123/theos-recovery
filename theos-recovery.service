@@ -1,0 +1,8 @@
+[Unit]
+Description=theOS Recovery Environment
+
+[Service]
+ExecStart=/usr/bin/theos-recovery
+
+[Install]
+WantedBy=emergency.target
