@@ -1,5 +1,8 @@
 [Unit]
 Description=theOS Recovery Environment
+After=emergency.target
+Wants=basic.target systemd-logind.service
+DefaultDependencies=false
 
 [Service]
 ExecStart=/usr/bin/theos-recovery
